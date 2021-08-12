@@ -8,6 +8,78 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.formulario{
+  background: rgba(0,0,0,.1);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.568);
+}
+
+.form-control{
+  background: rgba(0, 0, 0, .3);
+  border-style: none;
+  transition: 0.5s ease-in;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control:focus{
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control::placeholder{
+  color:lightblue;
+}
+
+.ingresar{
+  background: #138df7;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700!important;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.568);
+  transition: 0.5s ease-in;
+}
+
+.ingresar:hover{
+  color: white;
+}
+
+.olvide{
+  color: lightblue;
+  text-decoration-style: none;
+  text-decoration-line: none;
+}
+
+.olvide:hover{
+  color:grey;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.registrarse{
+  color: lightblue;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  font-size: 20px;
+  font-weight: 700!important;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .5);
+}
+
+.registrarse:hover{
+  color:grey;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
