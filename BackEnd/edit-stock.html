@@ -9,16 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SJASD - Blank</title>
+    <title>Admin - Stock </title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -35,25 +38,15 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Brisas de la Montaña</div>
             </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                RESERVAS
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -61,31 +54,32 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Cabañas</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">Ver</h6>
+                        <a class="collapse-item" href="buttons.html">Realizar reserva</a>
+                        <a class="collapse-item" href="cards.html">Ver estado de reserva</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
+            
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
+                    <span>Proveedor</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <h6 class="collapse-header">Proveedores</h6>
+                        <a class="collapse-item" href="utilities-color.html">Ver Proveedores</a>
+                        <a class="collapse-item" href="utilities-border.html">Registrar Nuevo Proveedor</a>
+                        <a class="collapse-item" href="utilities-animation.html">Modificar Proveedor</a>
                         <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
@@ -96,27 +90,27 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                OTRAS FUNCIONALIDADES
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <span>Confitería</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <h6 class="collapse-header">STOCK</h6>
+                        <a class="collapse-item" href="stock.html">Ver Stock</a>
+                        <a class="collapse-item" href="consumos.html">Consumos</a>
+                        <a class="collapse-item" href="#">Órdenes de Compra</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">PROVEEDORES</h6>
+                        <a class="collapse-item" href="#">Ver Proveedores</a>
+                        <a class="collapse-item" href="#">Registrar Proveedor</a>
+                        <a class="collapse-item" href="#">Modificar Proveedor</a>
                     </div>
                 </div>
             </li>
@@ -129,7 +123,7 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
@@ -156,9 +150,11 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                    <form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </form>
 
                     <!-- Topbar Search -->
                     <form
@@ -324,7 +320,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ivan Garcia</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -360,7 +356,96 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Stock</h1>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Stock Confitería</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Código</th>
+                                            <th>Nombre</th>
+                                            <th>Categoría</th>
+                                            <th>Marca</th>
+                                            <th>Precio Venta</th>
+                                            <th>Precio Compra</th>
+                                            <th>Stock Mínimo</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Código</th>
+                                            <th>Nombre</th>
+                                            <th>Categoría</th>
+                                            <th>Marca</th>
+                                            <th>Precio Venta</th>
+                                            <th>Precio Compra</th>
+                                            <th>Stock Mínimo</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>000001</td>
+                                            <td>Cerveza</td>
+                                            <td>Bebidas</td>
+                                            <td>Quilmes</td>
+                                            <td>
+                                                <input type="text" placeholder="$150">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="$75">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="10">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="18">
+                                            </td>
+                                            <th>
+                                                <a href="#"><i class="fas fa-edit" hidden></i></a>
+                                                <a href="#"><i class="fas fa-trash-alt" hidden></i></a>
+                                                <a href="#"><i class="fas fa-check"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>000002</td>
+                                            <td>Gaseosa 3l</td>
+                                            <td>Bebidas</td>
+                                            <td>Coca Cola</td>
+                                            <td>
+                                                <input type="text" placeholder="$300">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="$180">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="18">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="30">
+                                            </td>
+                                            <th>
+                                                <a href="#"><i class="fas fa-edit" hidden></i></a>
+                                                <a href="#"><i class="fas fa-trash-alt" hidden></i></a>
+                                                <a href="#"><i class="fas fa-check"></i></a>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    
 
                 </div>
                 <!-- /.container-fluid -->
@@ -372,7 +457,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; AppSistemas3</span>
                     </div>
                 </div>
             </footer>
@@ -418,6 +503,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

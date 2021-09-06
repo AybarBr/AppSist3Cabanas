@@ -23,6 +23,7 @@
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+    <link href="/FrontEnd/assets/css/newstyles.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -360,12 +361,14 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Stock Brisas de la Montaña</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Stock Confitería</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
+                                        <button id="new-product" class="btn btn-primary"><i class="fas fa-plus">  Nuevo Producto</i></button>
                                         <tr>
                                             <th>Código</th>
                                             <th>Nombre</th>
@@ -375,30 +378,23 @@
                                             <th>Precio Compra</th>
                                             <th>Stock Mínimo</th>
                                             <th>Cantidad</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Código</th>
-                                            <th>Nombre</th>
-                                            <th>Categoría</th>
-                                            <th>Marca</th>
-                                            <th>Precio Venta</th>
-                                            <th>Precio Compra</th>
-                                            <th>Stock Mínimo</th>
-                                            <th>Cantidad</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-                                        <tr>
+                                        <tr id="fila-1">
                                             <td>000001</td>
                                             <td>Cerveza</td>
-                                            <td>Bebidas</td>
+                                            <td id="categoria">Bebidas</td>
                                             <td>Quilmes</td>
-                                            <td>$150</td>
-                                            <td>$75</td>
-                                            <td>10</td>
-                                            <td>18</td>
+                                            <td id="precio-venta">$150</td>
+                                            <td id="precio-compra">$75</td>
+                                            <td id="stock-min">10</td>
+                                            <td id="cantidad">18</td>
+                                            <th>
+                                                <button id="edit-button"><i class="fas fa-edit"></i></button>
+                                                <button id="save-button"><i class="fas fa-check"></i></button>
+                                            </th>
                                         </tr>
                                         <tr>
                                             <td>000002</td>
@@ -409,12 +405,18 @@
                                             <td>$180</td>
                                             <td>18</td>
                                             <td>30</td>
+                                            <th>
+                                                <button id="edit-button"><i class="fas fa-edit"></i></button>
+                                                <button id="save-button"><i class="fas fa-check" ></i></button>
+                                            </th>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+
                         </div>
                     </div>
+                    
 
                 </div>
                 <!-- /.container-fluid -->
@@ -479,6 +481,8 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <script src="scripts.js"></script>
 
 </body>
 
