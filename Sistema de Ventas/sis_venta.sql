@@ -45,7 +45,26 @@ INSERT INTO `cliente` (`idcliente`, `nombre`, `telefono`, `direccion`, `usuario_
 (2, 'Angel sifuentes flores', '2147483647', 'Lima - Huari', 1, 1);
 
 -- --------------------------------------------------------
+use sis_venta;
 
+CREATE TABLE `proveedor` (
+  `idproveedor` int(11) NOT NULL,
+  `cuil` int(11) NOT NULL,
+  `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `direccion` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `telefono` int(15) COLLATE utf8_spanish_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `proveedor` (`idproveedor`, `cuil`, `nombre`, `direccion`, `telefono`, `email`) VALUES
+(1, '29268974856', 'Kiosco Juanito', 'Av Siempre Viva 856', 4318596, 'SanKiosco@gmail.com'),
+(2, '22268524854', 'Kiosco Pedrito', 'Pesherman 422 Sydney', 4314456, 'Nemo@gmail.com');
+
+-- --------------------------------------------------------
 --
 -- Estructura de tabla para la tabla `configuracion`
 --
@@ -233,6 +252,9 @@ ALTER TABLE `cliente`
 --
 -- Indices de la tabla `configuracion`
 --
+ALTER TABLE `proveedor` ADD PRIMARY KEY (`idproveedor`);
+
+
 ALTER TABLE `configuracion`
   ADD PRIMARY KEY (`id`);
 
@@ -279,9 +301,10 @@ ALTER TABLE `ventas`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT de la tabla proveedor
 --
-
+ALTER TABLE `proveedor`
+  MODIFY `idproveedor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `cliente`
 --
